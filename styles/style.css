@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -58,12 +61,6 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
@@ -120,6 +117,10 @@ ol {
   outline: 1px solid #fff;
 }
 
+.search-form__label:hover {
+  cursor: pointer;
+}
+
 .search-form__pseudo-checkbox {
   padding: 1px;
   width: 19px;
@@ -164,8 +165,13 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
+}
+
+.content__list-item {
+  padding: 0 3px;
 }
 
 .content__video-card {
@@ -240,12 +246,33 @@ ol {
 
 .button {
   border: none;
+  padding: 0;
+  margin: 0;
   background-color: transparent;
   color: #fff;
   font-family: 'Fira Sans Condensed';
   font-style: bold;
   font-size: 18px;
   border: 1px solid #fff;
+}
+
+.button:active {
+  background-color: #545050;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  cursor: pointer
+}
+
+.buton:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .search-form__submit-button {
@@ -255,5 +282,30 @@ ol {
 }
 
 .more-button {
-  width: 100%
-} 
+  flex-shrink: 0;
+  width: 100%;
+  height: 34px;
+}
+
+.content__card-link:active {
+  background-color: rgb(255 255 255 / 30%);
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.result__video-container,
+.content__list-container {
+  position: relative;
+}
