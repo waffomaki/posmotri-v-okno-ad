@@ -180,7 +180,7 @@ ol {
 
 .title {
   margin-bottom: 26px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -271,14 +271,14 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
 } */
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -299,7 +299,7 @@ ol {
   border: 1px solid #fff;
   padding: 0;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: bold;
   background-color: transparent;
