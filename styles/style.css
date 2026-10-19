@@ -46,7 +46,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+  background: rgb(217 217 217 / 0.1);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -235,7 +235,7 @@ ol {
 }
 
 .content__card-link:active {
-  background-color: rgb(255 255 255 / 30%);
+  background-color: rgb(255 255 255 / 0.3);
 }
 
 .content__card-link:focus {
